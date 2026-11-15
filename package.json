@@ -4,6 +4,8 @@
   "description": "A project using JSON and webpack",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/kelly-guo/restaurant-page/issues"
   },
