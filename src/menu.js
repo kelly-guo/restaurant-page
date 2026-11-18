@@ -6,7 +6,7 @@ export function loadMenu(){
     heading.textContent="FukuMomo Menu"
 
     const app = document.createElement("h2");
-    description.textContent="Appetizers"
+    app.textContent="Appetizers"
     const item1=document.createElement("p");
     item1.textContent="Gyoza"
 
@@ -21,8 +21,8 @@ export function loadMenu(){
     item3.textContent="Caramel pudding"
 
     const tokyoImg=document.createElement("img");
-    tokyoImg.src="https://media.digitalnomads.world/wp-content/uploads/2021/02/20120635/tokyo-for-digital-nomads.jpg"
+    tokyoImg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjGlGPcCZNnlUPshvCCQJZcvz6Iyk0X4L2wJ2SanEN4TQc7Aej1jTyLhgW&s=10"
 
-    content.append(heading,app,item1,item2,main,dessert,item3,tokyoImg)
+    content.append(heading,app,item1,main,item2,dessert,item3,tokyoImg)
 
 }

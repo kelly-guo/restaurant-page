@@ -2,6 +2,8 @@
 export function loadHome(){
 
     const content = document.querySelector("#content");
+    const wrapper = document.createElement("div")
+    wrapper.classList.add("tab","home-tab");
 
     const heading =document.createElement("h1");
     heading.textContent="FukuMomo"
@@ -16,7 +18,8 @@ export function loadHome(){
     foodImg.src="https://www.datocms-assets.com/146637/1737042493-948468d4eb39f3277e71377df6b8384c.png?auto=compress%2Cformat"
 
 
-    content.append(heading, restaurantImg, description, foodImg);
+    wrapper.append(heading, restaurantImg, description, foodImg);
+    content.append(wrapper);
 
 
 
