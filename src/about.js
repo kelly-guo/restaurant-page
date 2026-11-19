@@ -1,6 +1,8 @@
 export function loadAbout() {
 
     const content = document.querySelector("#content");
+    const wrapper = document.createElement("div")
+    wrapper.classList.add("tab","about-tab");
 
     const heading = document.createElement("h1");
     heading.textContent="About FukuMomo"
@@ -11,7 +13,8 @@ export function loadAbout() {
     const tokyoImg=document.createElement("img");
     tokyoImg.src="https://media.digitalnomads.world/wp-content/uploads/2021/02/20120635/tokyo-for-digital-nomads.jpg"
 
-    content.append(heading,description,tokyoImg)
+    wrapper.append(heading,description,tokyoImg)
+    content.append(wrapper)
 
 
 
