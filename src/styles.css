@@ -2,7 +2,7 @@
   --bg: #faf8f5;
   --text: #2a2a2a;
   --muted: #6b6b6b;
-  --accent: #c0392b;
+  --accent: #e39d24;
   --card: #ffffff;
 }
 
@@ -10,4 +10,83 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header + nav */
+header {
+  background: var(--card);
+  border-bottom: 1px solid #e6e2dc;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+nav button {
+    background: none;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  color: var(--muted);
+  padding: 8px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+ 
+}
+
+nav button:hover {
+    background: #f0b358;
+  color: var(--text);
+}
+
+nav button.active {
+  background: var(--accent);
+  color: white;
+}
+
+/* Tab content */
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.tab h2 {
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-top: 16px;
+}
+
+.tab p {
+  color: var(--muted);
+}
+
+.tab img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  max-height: 360px;
 }
